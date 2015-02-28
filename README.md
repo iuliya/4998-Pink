@@ -1,7 +1,7 @@
 # Проект «Pink»
 
 * Студент: [Julia Svalukhina](https://htmlacademy.ru/profile/id4998).
-* Наставник: `Unknown`.
+* Наставник: `Сергей Попов`.
 
 --
 

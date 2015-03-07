@@ -8,17 +8,17 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="page-wrapper">
         <header class="page-header">
-            <div class="clearfix">
-                <div class="logo-left">
+            <div class="page-header--clearfix">
+                <div class="page-header__logo-wrap">
                     <img src="" alt="Pink" class="logo">
                 </div>
-                <div class="menu-right">
-                    <button type="button" class="menu-btn  open"></button>
+                <div class="page-header__menu-btn-wrap">
+                    <button type="button" class="page-header__menu-btn page-header__menu-btn--open"></button>
                 </div>
             </div>
-            <nav class="top-menu">
+            <nav class="main-menu">
                 <ul>
                     <li><a href="">Информация</a></li>
                     <li><a href="">Возможности</a></li>
@@ -26,30 +26,30 @@
                     <li><a href="">Стоимость</a></li>
                 </ul>
             </nav>
-            <p>Взгляните на жизнь иначе!</p>
-            <a class="download-btn" href="">Скачать приложение</a>
-            <div class="device-logo">
+            <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
+            <a class="page-header__download-btn" href="">Скачать приложение</a>
+            <div class="page-header__device-logo">
                 <img src="" alt="mac">
                 <img src="" alt="android">
                 <img src="" alt="windows">
             </div>
-            <p>Доступно iPhone, iPad, Android, Windows phone, MacOS, Windows 8</p>
+            <p class="page-header__device">Доступно для iPhone, iPad, Android, Windows phone, MacOS, Windows 8</p>
         </header>
         <div class="page-content">
-            <div  class="intro">
+            <div  class="page-content__text">
                 <p>Устали от серости мегаполиса?</p>
                 <p>Нам есть, что вам предложить!</p>
             </div>
-            <div class="features">
-                <section class="features-item">
+            <div class="page-content__features">
+                <section class="page-content__features-item">
                     <h2>Поднимает настроение</h2>
                     <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </section>
-                <section class="features-item">
+                <section class="page-content__features-item">
                     <h2>Меняет мир вокруг</h2>
                     <p>Сделайте снимок и укарсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </section>
-                <section class="features-item">
+                <section class="page-content__features-item">
                     <h2>Заводит новых друзей</h2>
                     <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </section>
@@ -58,15 +58,15 @@
                 <input type="radio" id="comment-1" name="toggle1" checked>
                 <input type="radio" id="comment-2" name="toggle1">
                 <input type="radio" id="comment-3" name="toggle1">
-                <div class="slider-controls">
+                <div class="slider-comments__controls">
                     <label for="comment-1"></label>
                     <label for="comment-2"></label>
                     <label for="comment-3"></label>
                 </div>
-                <div class="slides">
-                    <div class="slide">
-                        <div class="title">Николай Петров</div>
-                        <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглунуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                <div class="slider-comments__list">
+                    <div class="slider-comments__item">
+                        <div class="slider-comments__title">Николай Петров</div>
+                        <p class="slider-comments__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглунуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
                     </div>
                 </div>
             </div>
@@ -74,28 +74,28 @@
                 <input type="radio" id="btn-1" name="toggle2" checked>
                 <input type="radio" id="btn-2" name="toggle2">
                 <input type="radio" id="btn-3" name="toggle2">
-                <div class="slider-controls">
+                <div class="slider-prices__controls">
                     <label for="btn-1"></label>
                     <label for="btn-2"></label>
                     <label for="btn-3"></label>
                 </div>
-                <div class="slides">
-                    <div class="slide">
+                <div class="slider-prices__list">
+                    <div class="slider-prices__item">
                         <table>
                             <tr>
-                                <th class="flag">
+                                <th class="slider-prices__title--flag">
                                     Стандарт
-                                    <span class="price">3,99 USD</span>
+                                    <span class="slider-prices__title-price">3,99 USD</span>
                                 </th>
                             </tr>
                             <tr>
-                                <td class="option">Розовый фильтр</td>
+                                <td class="slider-prices__option">Розовый фильтр</td>
                             </tr>
                             <tr>
-                                <td class="option">Смайлики</td>
+                                <td class="slider-prices__option">Смайлики</td>
                             </tr>
                             <tr>
-                                <td class="option">Комментарии</td>
+                                <td class="slider-prices__option">Комментарии</td>
                             </tr>
                         </table>
                     </div>
@@ -103,20 +103,20 @@
             </div>
         </div>    
         <footer class="page-footer">
-            <p class="intro">Остались вопросы? Свяжитесь с нами!</p>
-            <p class="contacts">
+            <p class="page-footer__text">Остались вопросы? Свяжитесь с нами!</p>
+            <p class="page-footer__contacts">
                 <span>Звоните:</span>
                 8(800) 1000 900
             </p>
-            <p class="contacts">
+            <p class="page-footer__contacts">
                 <span>Пишите:</span>
                 hello@pinkapp.ru
             </p>
-            <p class="contacts">
+            <p class="page-footer__contacts">
                 <span>Приезжайте в гости:</span>
                 Санкт-Петербург, Невский проспект, д. 20
             </p>
-            <div class="map"></div>
+            <div class="page-footer__map"></div>
         </footer>
   <!-- <script src="js/script.js"></script> -->
     </div>

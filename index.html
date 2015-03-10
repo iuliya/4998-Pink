@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Pink</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style-header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -12,13 +14,13 @@
         <header class="page-header">
             <div class="page-header--clearfix">
                 <div class="page-header__logo-wrap">
-                    <img src="" alt="Pink" class="logo">
+                    <img src="img/logo.png" alt="Pink">
                 </div>
-                <div class="page-header__menu-btn-wrap">
-                    <button type="button" class="page-header__menu-btn page-header__menu-btn--open"></button>
+                <div class="page-header__menu-btn-wrap">   
+                    <a href="" class="page-header__menu-btn page-header__menu-btn--open"></a>
                 </div>
-            </div>
-            <nav class="main-menu">
+            </div>    
+            <nav class="main-menu main-menu--close">
                 <ul>
                     <li><a href="">Информация</a></li>
                     <li><a href="">Возможности</a></li>
@@ -27,13 +29,16 @@
                 </ul>
             </nav>
             <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
-            <a class="page-header__download-btn" href="">Скачать приложение</a>
-            <div class="page-header__device-logo">
-                <img src="" alt="mac">
-                <img src="" alt="android">
-                <img src="" alt="windows">
+            <div class="application">
+                <a class="application__download-btn" href="">Скачать приложение</a>
+                <div class="application__device-logo">
+                    <img src="img/logo-apple.png
+                    " alt="mac">
+                    <img src="img/logo-android.png" alt="android">
+                    <img src="img/logo-microsoft.png" alt="windows">
+                </div>
+                <p class="application__device-name">Доступно для iPhone, iPad, Android, Windows phone, MacOS, Windows 8</p>
             </div>
-            <p class="page-header__device">Доступно для iPhone, iPad, Android, Windows phone, MacOS, Windows 8</p>
         </header>
         <div class="page-content">
             <div  class="page-content__text">
@@ -59,14 +64,14 @@
                 <input type="radio" id="comment-2" name="toggle1">
                 <input type="radio" id="comment-3" name="toggle1">
                 <div class="slider-comments__controls">
-                    <label for="comment-1"></label>
+                    <label for="comment-1" class="slider-comments__controls--active"></label>
                     <label for="comment-2"></label>
                     <label for="comment-3"></label>
                 </div>
                 <div class="slider-comments__list">
                     <div class="slider-comments__item">
-                        <div class="slider-comments__title">Николай Петров</div>
-                        <p class="slider-comments__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглунуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                        <div class="slider-comments__item-title">Николай Петров</div>
+                        <p class="slider-comments__item-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
                     </div>
                 </div>
             </div>
@@ -118,7 +123,7 @@
             </p>
             <div class="page-footer__map"></div>
         </footer>
-  <!-- <script src="js/script.js"></script> -->
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

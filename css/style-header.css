@@ -1,0 +1,131 @@
+.page-wrapper {
+    width: 320px;
+}
+.page-header {
+    background-color: #1d2631;
+    background-image: url("../img/bg-page-header.png");
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 729px;
+    position: relative;
+}
+.page-header--clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+    margin-bottom: 25px;
+}
+.page-header__logo-wrap {
+    float: left;
+    height: 66px;
+}
+.page-header__logo-wrap img {
+    margin-left: 20px;
+    margin-top: 22px;
+    
+    position: relative;
+    z-index: 5;
+}
+.page-header__menu-btn-wrap {
+    float: right;
+}
+.page-header__menu-btn {
+    display: block;
+    border: medium none;
+    cursor: pointer;
+    height: 24px;
+    margin-right: 20px;
+    margin-top: 22px;
+    padding: 0;
+    position: relative;
+    width: 50px;
+    z-index: 5;
+}
+.page-header__menu-btn--open {
+    background: url("../img/btn-menu-open.png") no-repeat;
+}
+.page-header__menu-btn--close {
+    background: url("../img/btn-menu-close.png") no-repeat right center;
+}
+.page-header .main-menu {
+    display: block;
+    background-color: #283645;
+    padding-top: 69px;
+    position: absolute;
+    top: 0;
+    width: 320px;
+}
+
+.page-header .main-menu--close{
+    display: none;
+}
+.page-header .main-menu ul {
+    box-shadow: 0 -1px black;
+    margin: 0;
+    padding: 0;
+}
+.page-header .main-menu li {
+    list-style: outside none none;
+}
+.page-header .main-menu li a {
+    background-color: #283645;
+    box-shadow: 0 -1px black inset, 0 1px #495562 inset;
+    color: #fff;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 16px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.page-header__slogan {
+    font-family: "Open Sans",sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    margin: 0 auto 332px;
+    padding: 0;
+    text-align: center;
+    width: 221px;
+}
+.page-header .application {
+    margin: 0 auto;
+    width: 280px;
+}
+.page-header .application__download-btn {
+    border: 3px solid white;
+    color: #fff;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 275px;
+}
+.page-header .application__device-logo {
+    margin: 0 auto 28px;
+    min-height: 57px;
+    width: 205px;
+}
+.page-header .application__device-logo img {
+    padding-right: 32px;
+    vertical-align: middle;
+}
+.page-header .application__device-logo img:nth-child(3n) {
+    padding-right: 0;
+}
+.page-header .application__device-name {
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    width: 231px;
+}
